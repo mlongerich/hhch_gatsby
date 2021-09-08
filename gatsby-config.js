@@ -24,17 +24,18 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/hh-icon.png`, // This path is relative to the root of the site.
       },
     },
     {
       resolve: "gatsby-source-wordpress",
       options: {
         minimizeDeprecationNotice: true,
-        baseUrl: "gatsby-wordpress-course.local",
+        baseUrl: "hhch.local",
         protocol: "http",
         hostingWPCOM: false,
-        useACF: false,
+        useACF: true,
+        acfOptionPageIds: [],
         verboseOutput: false,
         perPage: 100,
         concurrentRequests: 10,
@@ -46,7 +47,16 @@ module.exports = {
           "**/tags",
           "**/taxonomies",
           "**/users",
+          "**/menus",
+          "**/news",
+          "**/logo",
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
       },
     },
   ],
