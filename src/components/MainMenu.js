@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, useStaticQuery } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 import SiteInfo from "../components/SiteInfo"
 import SiteLogo from "../components/SiteLogo"
