@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby WordPress Starter`,
-    description: `Kick off your next, great Gatsby project with this WordPress starter.`,
-    author: `@tomphill`,
+    title: `Hope House Children's Home`,
+    description: `Hope House Children's Home located in Chiang Mai, Thailand`,
+    author: `Michael Longerich`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
