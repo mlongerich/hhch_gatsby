@@ -1,16 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import styled from "styled-components"
-
-const SiteInfoWrapper = styled.div`
-  color: white;
-  flex-grow: 1;
-  margin: auto 0;
-`
-
-const SiteInfoTitle = styled.div`
-  font-weight: bold;
-`
+import { graphql, Link, useStaticQuery } from "gatsby"
 
 const SiteInfo = () => {
   const { allWordpressSiteMetadata } = useStaticQuery(graphql`
@@ -27,18 +16,26 @@ const SiteInfo = () => {
   `)
 
   return (
-    <SiteInfoWrapper>
-      <SiteInfoTitle
-        dangerouslySetInnerHTML={{
-          __html: allWordpressSiteMetadata.edges[0].node.name,
-        }}
-      />
-      <div
-        dangerouslySetInnerHTML={{
-          __html: allWordpressSiteMetadata.edges[0].node.description,
-        }}
-      />
-    </SiteInfoWrapper>
+    <div
+      className="invisible my-auto text-gray-900 md:visible"
+      id="site-info-wrapper"
+    >
+      <Link to="/">
+        <div
+          dangerouslySetInnerHTML={{
+            __html: allWordpressSiteMetadata.edges[0].node.name,
+          }}
+          className="font-bold"
+        />
+      </Link>
+      <Link to="/">
+        <div
+          dangerouslySetInnerHTML={{
+            __html: allWordpressSiteMetadata.edges[0].node.description,
+          }}
+        />
+      </Link>
+    </div>
   )
 }
 

@@ -26,6 +26,9 @@ exports.createPages = async ({ graphql, actions }) => {
             title
             content
             template
+            featured_media {
+              source_url
+            }
           }
         }
       }
@@ -59,6 +62,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const newsUnderContentTemplate = path.resolve(
     `./src/templates/newsUnderContent.js`
   )
+  const homeTemplate = path.resolve(`./src/templates/home.js`)
   // We want to create a detailed page for each
   // page node. We'll just use the WordPress Slug for the slug.
   // The Page ID is prefixed with 'PAGE_'
@@ -75,6 +79,8 @@ exports.createPages = async ({ graphql, actions }) => {
       component: slash(
         edge.node.template === "news_under_content.php"
           ? newsUnderContentTemplate
+          : edge.node.template === "home.php"
+          ? homeTemplate
           : pageTemplate
       ),
       context: edge.node,
