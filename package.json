@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Tom Phillips <info@tomphill.co.uk>",
   "dependencies": {
+    "@wordpress/block-library": "^6.0.0",
     "autoprefixer": "^10.3.4",
     "babel-plugin-styled-components": "^1.13.2",
     "gatsby": "^2.24.50",

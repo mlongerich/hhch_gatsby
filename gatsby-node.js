@@ -63,6 +63,7 @@ exports.createPages = async ({ graphql, actions }) => {
     `./src/templates/newsUnderContent.js`
   )
   const homeTemplate = path.resolve(`./src/templates/home.js`)
+  const kidzClubTemplate = path.resolve(`./src/templates/kidzClub.js`)
   // We want to create a detailed page for each
   // page node. We'll just use the WordPress Slug for the slug.
   // The Page ID is prefixed with 'PAGE_'
@@ -81,6 +82,8 @@ exports.createPages = async ({ graphql, actions }) => {
           ? newsUnderContentTemplate
           : edge.node.template === "home.php"
           ? homeTemplate
+          : edge.node.template === "kidz_club.php"
+          ? kidzClubTemplate
           : pageTemplate
       ),
       context: edge.node,

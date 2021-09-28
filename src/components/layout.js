@@ -9,6 +9,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { createGlobalStyle } from "styled-components"
 import MainMenu from "./MainMenu"
+import "@wordpress/block-library/build-style/style.css"
 // import MainMenu2 from "./MainMenu2"
 
 const GlobalStyle = createGlobalStyle`
