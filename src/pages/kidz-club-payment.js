@@ -29,8 +29,8 @@ const Checkout = () => {
     const { error } = await stripe.redirectToCheckout({
       mode: "payment",
       lineItems: [{ price: "price_1JeiPBBgn05wH70kaeppHior", quantity: 1 }],
-      successUrl: `http://localhost:8000/kidz-club-success/`,
-      cancelUrl: `http://localhost:8000/kidz-club-cancel`,
+      successUrl: `http://hopehousechildrenshome.com/kidz-club-success/`,
+      cancelUrl: `http://hopehousechildrenshome.com/kidz-club-cancel`,
     })
   }
   const redirectToCheckout = async event => {
@@ -40,8 +40,8 @@ const Checkout = () => {
     const { error } = await stripe.redirectToCheckout({
       mode: "payment",
       lineItems: [{ price: "price_1JeiPBBgn05wH70kaeppHior", quantity: 1 }],
-      successUrl: `http://localhost:8000/kidz-club-success/`,
-      cancelUrl: `http://localhost:8000/kidz-club-cancel`,
+      successUrl: `http://hopehousechildrenshome.com/kidz-club-success/`,
+      cancelUrl: `http://hopehousechildrenshome.com/kidz-club-cancel`,
     })
     if (error) {
       console.warn("Error:", error)
