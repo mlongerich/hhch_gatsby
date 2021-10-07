@@ -1,19 +1,37 @@
 import React, { useState } from "react"
-import ModalVideo from "react-modal-video"
+import Modal from "react-modal"
 
 const KidzClubVideo = () => {
   const [videoIsOpen, setVideoIsOpen] = useState(false)
+  const customStyles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+    },
+  }
 
   return (
     <div className="grid grid-cols-2 md:pt-12 md:pl-0">
       <div className="relative flex items-center justify-center">
-        <ModalVideo
-          channel="youtube"
-          autoplay
+        <Modal
           isOpen={videoIsOpen}
-          videoId="5mwK3ejHHog"
-          onClose={() => setVideoIsOpen(false)}
-        />
+          onRequestClose={() => setVideoIsOpen(false)}
+          style={customStyles}
+        >
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/5mwK3ejHHog"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </Modal>
         <button className="btn-primary" onClick={() => setVideoIsOpen(true)}>
           <img src="https://via.placeholder.com/800x600" />
         </button>
