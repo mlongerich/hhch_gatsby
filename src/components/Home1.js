@@ -23,7 +23,7 @@ const Home1 = () => {
   `)
 
   return (
-    <div className="grid grid-cols-2 pl-12 pr-12 md:pt-12 md:pl-0">
+    <div className="grid grid-cols-2 md:pt-12 md:pl-0">
       <div className="relative flex items-center justify-center">
         <a href={slash(allWordpressPage.edges[0].node.slug)} className="">
           <img

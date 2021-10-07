@@ -17,11 +17,13 @@ export default ({ pageContext }) => {
           />
         </div>
       )}
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        <Newsletter />
-        <div>
-          <Home1 />
-          <Home2 />
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <Newsletter />
+          <div>
+            <Home1 />
+            <Home2 />
+          </div>
         </div>
       </div>
       <div className="container mx-auto" id="layout-wrapper">

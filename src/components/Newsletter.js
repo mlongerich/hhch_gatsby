@@ -23,7 +23,7 @@ const Newsletter = () => {
   `)
 
   return (
-    <div className="w-full p-12">
+    <div className="w-full py-12 md:pr-12">
       <div className="relative flex items-center justify-center h-full bg-red-500">
         <div className="relative z-10 py-4 text-center text-gray-50">
           <h1

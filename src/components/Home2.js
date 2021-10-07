@@ -23,7 +23,7 @@ const Home2 = () => {
   `)
 
   return (
-    <div className="grid grid-cols-2 py-12 pl-12 pr-12 md:pl-0">
+    <div className="grid grid-cols-2 py-12 md:pl-0">
       <div className="relative p-4 text-center bg-gray-200">
         <h1
           className="text-lg font-bold text-red-500 font-display"
