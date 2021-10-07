@@ -28,7 +28,9 @@ const Checkout = () => {
     const stripe = await getStripe()
     const { error } = await stripe.redirectToCheckout({
       mode: "payment",
-      lineItems: [{ price: "price_1JeiPBBgn05wH70kaeppHior", quantity: 1 }],
+      lineItems: [
+        { price: `${process.env.GATSBY_STRIPE_KIDZ_CLUB_ITEM}`, quantity: 1 },
+      ],
       successUrl: `http://hopehousechildrenshome.com/kidz-club-success/`,
       cancelUrl: `http://hopehousechildrenshome.com/kidz-club-cancel`,
     })
@@ -39,7 +41,9 @@ const Checkout = () => {
     const stripe = await getStripe()
     const { error } = await stripe.redirectToCheckout({
       mode: "payment",
-      lineItems: [{ price: "price_1JeiPBBgn05wH70kaeppHior", quantity: 1 }],
+      lineItems: [
+        { price: `${process.env.GATSBY_STRIPE_KIDZ_CLUB_ITEM}`, quantity: 1 },
+      ],
       successUrl: `http://hopehousechildrenshome.com/kidz-club-success/`,
       cancelUrl: `http://hopehousechildrenshome.com/kidz-club-cancel`,
     })
