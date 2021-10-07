@@ -1,15 +1,12 @@
 import React, { useState } from "react"
 import Layout from "../components/layout"
-import Home2 from "../components/Home2"
 import KidzClubInfographic from "../components/KidzClubInfographic"
-import { Link } from "gatsby-plugin-modal-routing"
 import KidzClubRules from "../components/KidzClubRules"
 import Modal from "react-modal"
-import KidzClubVideo from "../components/kidzClubVideo"
+import KidzClubVideo from "../components/KidzClubVideo"
 
 export default ({ pageContext }) => {
   const [rulesIsOpen, setRulesIsOpen] = useState(false)
-  const [formIsOpen, setFormIsOpen] = useState(false)
   const customStyles = {
     content: {
       top: "50%",
