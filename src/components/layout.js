@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet"
 import { createGlobalStyle } from "styled-components"
 import MainMenu from "./MainMenu"
 import "@wordpress/block-library/build-style/style.css"
-import "react-modal-video/css/modal-video.css"
+import "react-modal-video/css/modal-video.min.css"
 
 // import MainMenu2 from "./MainMenu2"
 
