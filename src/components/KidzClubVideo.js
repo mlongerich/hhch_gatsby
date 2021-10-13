@@ -1,46 +1,29 @@
 import React, { useState } from "react"
-import Modal from "react-modal"
+import ModalVideo from "react-modal-video"
+import { StaticImage } from "gatsby-plugin-image"
 
 const KidzClubVideo = () => {
   const [videoIsOpen, setVideoIsOpen] = useState(false)
-  const customStyles = {
-    content: {
-      top: "50%",
-      left: "50%",
-      right: "auto",
-      bottom: "auto",
-      marginRight: "-50%",
-      transform: "translate(-50%, -50%)",
-    },
-  }
 
   return (
     <div className="grid grid-cols-2 md:pt-12 md:pl-0">
       <div className="relative flex items-center justify-center">
-        <Modal
+        <ModalVideo
+          channel="youtube"
+          autoplay
           isOpen={videoIsOpen}
-          onRequestClose={() => setVideoIsOpen(false)}
-          style={customStyles}
-        >
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/5mwK3ejHHog"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </Modal>
+          videoId="5mwK3ejHHog"
+          onClose={() => setVideoIsOpen(false)}
+        />
         <button className="btn-primary" onClick={() => setVideoIsOpen(true)}>
-          <img src="https://via.placeholder.com/800x600" />
+          <StaticImage src="../images/kkvid-wide.png" />
         </button>
       </div>
-      <div className="relative p-4 text-center bg-gray-200">
+      <div className="flex flex-col items-center justify-center p-4 text-center bg-gray-200">
         <h1 className="text-lg font-bold text-red-500 font-display">
-          Kidz Club Video
+          What is the KidzKlub?
         </h1>
-        <p className="py-4 text-xs">Text about video</p>
+        <p className="py-4 text-xs">Find out more about the KidzClub</p>
         <div className="">
           <button
             className="inline-block p-2 px-8 py-4 text-sm tracking-widest text-white uppercase bg-blue-500 font-heading"
