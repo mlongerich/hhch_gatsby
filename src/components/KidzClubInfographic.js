@@ -6,7 +6,7 @@ const KidzClubInfographic = () => {
     <div>
       <StaticImage
         src="../images/kidzClubInfo.png"
-        className="inset-0 object-cover h-full min-w-full min-h-full opacity-90"
+        className="inset-0 object-cover h-full min-w-full min-h-full rounded-sm opacity-90"
       />
     </div>
   )

@@ -19,14 +19,14 @@ const KidzClubVideo = () => {
           <StaticImage src="../images/kkvid-wide.png" />
         </button>
       </div>
-      <div className="flex flex-col items-center justify-center p-4 text-center bg-gray-200">
-        <h1 className="text-lg font-bold text-red-500 font-display">
-          What is the KidzKlub?
+      <div className="flex flex-col items-center p-4 text-center bg-gray-200 rounded-r-sm justify-evenly">
+        <h1 className="text-2xl font-bold text-red-500 font-display">
+          WHAT IS THE KIDZ CLUB?
         </h1>
-        <p className="py-4 text-xs">Find out more about the KidzClub</p>
+        <p className="py-4">Find out more about the KidzClub</p>
         <div className="">
           <button
-            className="inline-block p-2 px-8 py-4 text-sm tracking-widest text-white uppercase bg-blue-500 font-heading"
+            className="inline-block p-2 px-8 py-4 text-sm tracking-widest text-white uppercase bg-blue-500 rounded font-heading"
             onClick={() => setVideoIsOpen(true)}
           >
             Watch Video...

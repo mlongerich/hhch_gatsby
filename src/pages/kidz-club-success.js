@@ -6,15 +6,33 @@ const Success = () => {
   return (
     <Layout>
       <div className="container mx-auto">
-        <h1>Thank you</h1>
+        <h1 className="py-4 text-2xl font-bold text-red-500 font-display">
+          Thank you
+        </h1>
         <div className="mx-auto">
-          <p>Thank you for signing up for our Kidz Club Program.</p>
-          <p> Your payment was successfully recieved. </p>
-          <p>You will recieve your first package soon.</p>
-          <p> Please email kidzclubhh@gmail.com if you have any questions. </p>
+          <p className="py-2">
+            Thank you for signing up for our Kidz Club Program.
+          </p>
+          <p className="py-2">Your payment was successfully recieved.</p>
+          <p className="py-2">You will recieve your first package soon.</p>
+          <p className="pt-2 pb-4">
+            Please email{" "}
+            <a
+              className="text-blue-400 underline"
+              href="mailto:kidzclubhh@gmail.com"
+            >
+              kidzclubhh@gmail.com
+            </a>{" "}
+            if you have any questions.
+          </p>
         </div>
 
-        <Link to="/">Go back to the homepage</Link>
+        <Link
+          to="/kidz-club"
+          className="inline-block p-2 px-8 py-4 text-sm tracking-widest text-white uppercase bg-blue-500 font-heading"
+        >
+          Go back to the Kidz Club
+        </Link>
       </div>
     </Layout>
   )

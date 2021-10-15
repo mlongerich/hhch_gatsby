@@ -31,7 +31,7 @@ const MainMenu = () => {
           id="top-banner"
         >
           <p className="text-sm">
-            Top banner for something we want to highlight...
+            <a href="/kidz-club">Kidz Club starting November 1!</a>
           </p>
         </div>
         <div

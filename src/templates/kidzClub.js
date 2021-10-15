@@ -4,6 +4,7 @@ import KidzClubInfographic from "../components/KidzClubInfographic"
 import KidzClubRules from "../components/KidzClubRules"
 import Modal from "react-modal"
 import KidzClubVideo from "../components/KidzClubVideo"
+import { StaticImage } from "gatsby-plugin-image"
 
 export default ({ pageContext }) => {
   const [rulesIsOpen, setRulesIsOpen] = useState(false)
@@ -38,15 +39,21 @@ export default ({ pageContext }) => {
                 <KidzClubInfographic />
               </a>
             </div>
+            <div className="visible hidden -mr-12 text-right md:block xl:hidden">
+              <StaticImage
+                src="../images/register.png"
+                className="rounded-r-sm"
+              />
+            </div>
           </div>
           <div>
             <KidzClubVideo />
-            <div className="py-12">
-              <div className="container p-4 mx-auto bg-gray-200">
+            <div className="py-12 xl:pb-0">
+              <div className="container p-4 mx-auto bg-gray-200 rounded-sm">
                 <div>
                   <div>
-                    <h1 className="text-lg font-bold text-center text-red-500 font-display">
-                      Register your child
+                    <h1 className="pb-4 text-2xl font-bold text-center text-red-500 font-display">
+                      REGISTER YOUR CHILD
                     </h1>
                   </div>
                   <form
@@ -141,48 +148,58 @@ export default ({ pageContext }) => {
                         class="mt-2 w-full border-none text-sm p-4 bg-gray-100 text-gray-700"
                       />
                     </div>
-                    <button className="inline-block px-8 py-4 mt-6 text-sm tracking-widest text-white uppercase bg-blue-500 font-heading">
+                    <button className="inline-block px-8 py-4 mt-6 text-sm tracking-widest text-white uppercase bg-blue-500 rounded font-heading">
                       Proceed to Payment
                     </button>
                   </form>
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-2 md:pl-0">
-              <div className="relative p-4 text-center bg-gray-200">
-                <h1 className="text-lg font-bold text-red-500 font-display">
-                  Kidz Club Rules
+            <div className="hidden -ml-12 xl:block xl:visible">
+              <StaticImage
+                src="../images/register.png"
+                className="rounded-r-sm"
+              />
+            </div>
+            <div className="grid grid-cols-2 pb-12 md:pl-0">
+              <div className="flex flex-col items-center p-4 text-center bg-gray-200 rounded-r-sm justify-evenly">
+                {/* <div className="relative p-4 text-center bg-gray-200 rounded-l-sm"> */}
+                <h1 className="text-2xl font-bold text-red-500 font-display">
+                  KIDZ CLUB RULES
                 </h1>
-                <p className="py-4 text-xs">
+                <p className="py-4">
                   Terms and Conditions of Kidz Club can be found here
                 </p>
                 <div className="">
                   <button
-                    className="inline-block p-2 px-8 py-4 text-sm tracking-widest text-white uppercase bg-blue-500 font-heading"
+                    className="inline-block p-2 px-8 py-4 text-sm tracking-widest text-white uppercase bg-blue-500 rounded font-heading"
                     onClick={() => setRulesIsOpen(true)}
                   >
                     Read more...
                   </button>
                 </div>
               </div>
-              <div className="relative flex items-center justify-center">
+              <div className="relative flex items-center justify-center rounded-r-sm">
                 <Modal
                   isOpen={rulesIsOpen}
                   onRequestClose={() => setRulesIsOpen(false)}
                   style={customStyles}
                 >
                   <button
-                    className="inline-block p-2 px-8 py-4 text-sm tracking-widest text-white uppercase font-heading"
+                    className="inline-block p-2 px-8 py-4 text-sm tracking-widest text-white uppercase rounded font-heading"
                     onClick={() => setRulesIsOpen(false)}
                   >
                     <KidzClubRules />
                   </button>
                 </Modal>
                 <button
-                  className="btn-primary"
+                  className="rounded btn-primary"
                   onClick={() => setRulesIsOpen(true)}
                 >
-                  <KidzClubRules klass="absolute top-0 left-0 object-cover h-full min-w-full min-h-full" />
+                  <StaticImage
+                    src="../images/kc-rules.png"
+                    className="top-0 left-0 object-cover h-full min-w-full min-h-full rounded-r-sm"
+                  />
                 </button>
               </div>
             </div>
