@@ -7,7 +7,7 @@ const KidzClubVideo = () => {
 
   return (
     <div className="grid grid-cols-2 md:pt-12 md:pl-0">
-      <div className="relative flex items-center justify-center">
+      <div className="relative flex items-center justify-center p-4 bg-gray-200 rounded-l-sm">
         <ModalVideo
           channel="youtube"
           autoplay

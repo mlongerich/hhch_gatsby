@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 const Cancel = () => {
   return (
     <Layout>
-      <div className="container mx-auto">
+      <div className="container pb-12 mx-auto">
         <h1 className="py-4 text-2xl font-bold text-red-500 font-display">
           Your payment did not succeed
         </h1>

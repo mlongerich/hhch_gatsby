@@ -3,9 +3,9 @@ import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 
 const SiteLogoStyle = styled.img`
-  width: 64px;
-  height: 64px;
-  margin: 8px 8px 8px 0;
+  width: 128px;
+  height: 128px;
+  margin: 0 16px;
 `
 
 const SiteLogo = () => {

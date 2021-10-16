@@ -53,7 +53,7 @@ export default ({ pageContext }) => {
                 <div>
                   <div>
                     <h1 className="pb-4 text-2xl font-bold text-center text-red-500 font-display">
-                      REGISTER YOUR CHILD
+                      JOIN THE CLUB
                     </h1>
                   </div>
                   <form
@@ -163,7 +163,6 @@ export default ({ pageContext }) => {
             </div>
             <div className="grid grid-cols-2 pb-12 md:pl-0">
               <div className="flex flex-col items-center p-4 text-center bg-gray-200 rounded-r-sm justify-evenly">
-                {/* <div className="relative p-4 text-center bg-gray-200 rounded-l-sm"> */}
                 <h1 className="text-2xl font-bold text-red-500 font-display">
                   KIDZ CLUB RULES
                 </h1>
@@ -179,7 +178,7 @@ export default ({ pageContext }) => {
                   </button>
                 </div>
               </div>
-              <div className="relative flex items-center justify-center rounded-r-sm">
+              <div className="relative flex items-center justify-center p-4 bg-gray-200 rounded-r-sm">
                 <Modal
                   isOpen={rulesIsOpen}
                   onRequestClose={() => setRulesIsOpen(false)}
