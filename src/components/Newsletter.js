@@ -45,7 +45,7 @@ const Newsletter = () => {
             Sign up now
           </a>
         </div>
-        <a href="/">
+        <a href="https://projectsforasia.com/hope-house">
           <img
             src={allWordpressPage.edges[0].node.featured_media.source_url}
             className="absolute inset-0 object-cover h-full min-w-full min-h-full opacity-20"

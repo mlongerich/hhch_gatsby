@@ -27,7 +27,7 @@ const KidzClubVideo = () => (
           ></iframe>
         </div>
 
-        <Link to="/">Go back to the homepage</Link>
+        <Link to="/kidz-club">Go back Kidz Club</Link>
       </div>
     )}
   </ModalRoutingContext.Consumer>

@@ -41,7 +41,7 @@ const MainMenu = () => {
           id="main-menu-inner"
         >
           <div id="pfa-info" className="flex flex-row">
-            <Link to="/">
+            <Link to="https://projectsforasia.com/hope-house">
               <SiteLogo />
             </Link>
             <SiteInfo />
@@ -51,7 +51,11 @@ const MainMenu = () => {
               <div className="p-4 my-auto text-gray-900">
                 <Link
                   to={
-                    item.object_slug === "home" ? "/" : `/${item.object_slug}`
+                    item.object_slug === "home"
+                      ? "https://projectsforasia.com/hope-house"
+                      : item.object_slug === "donate"
+                      ? "https://projectsforasia.com/donate"
+                      : `/${item.object_slug}`
                   }
                   key={item.title}
                 >
@@ -107,7 +111,11 @@ const MainMenu = () => {
               <div className="">
                 <Link
                   to={
-                    item.object_slug === "home" ? "/" : `/${item.object_slug}`
+                    item.object_slug === "home"
+                      ? "https://projectsforasia.com/hope-house"
+                      : item.object_slug === "donate"
+                      ? "https://projectsforasia.com/donate"
+                      : `/${item.object_slug}`
                   }
                   key={item.title}
                   className="inline-block border-b-4 border-transparent hover:border-gray-900"

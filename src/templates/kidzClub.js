@@ -35,9 +35,7 @@ export default ({ pageContext }) => {
           <div className="w-full py-12 md:pr-12">
             <div className="flex justify-center bg-gray-200">
               <div className="relative z-10 py-4 text-center text-gray-50"></div>
-              <a href="/">
-                <KidzClubInfographic />
-              </a>
+              <KidzClubInfographic />
             </div>
             <div className="visible hidden -mr-12 text-right md:block xl:hidden">
               <StaticImage
