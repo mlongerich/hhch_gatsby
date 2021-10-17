@@ -61,5 +61,6 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
     `gatsby-plugin-modal-routing`,
+    `gatsby-plugin-netlify`,
   ],
 }

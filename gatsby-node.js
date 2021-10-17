@@ -102,4 +102,10 @@ exports.createPages = async ({ graphql, actions }) => {
       context: edge.node,
     })
   })
+  createRedirect({
+    fromPath: "/",
+    toPath: "https://www.projectsforasia.com/hope-house",
+    // isPermanent: true,
+    force: true,
+  })
 }

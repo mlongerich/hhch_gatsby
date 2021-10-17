@@ -14,6 +14,7 @@
     "gatsby-plugin-image": "^1.14.0",
     "gatsby-plugin-manifest": "^2.4.24",
     "gatsby-plugin-modal-routing": "^1.2.0",
+    "gatsby-plugin-netlify": "^3.14.0",
     "gatsby-plugin-offline": "^3.2.24",
     "gatsby-plugin-postcss": "^4.13.0",
     "gatsby-plugin-react-helmet": "^3.3.10",
