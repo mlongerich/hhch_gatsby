@@ -17,13 +17,13 @@ module.exports = {
       purple: colors.violet,
       pink: colors.pink,
     },
-    debugScreens: {
-      position: ["top", "left"],
-    },
+    // debugScreens: {
+    //   position: ["top", "left"],
+    // },
     extend: {},
   },
   variants: {
     extend: {},
   },
-  plugins: [require("tailwindcss-debug-screens")],
+  // plugins: [require("tailwindcss-debug-screens")],
 }
