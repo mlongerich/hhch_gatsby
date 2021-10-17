@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "/"
+  to = "http://projectsforasia.com/hope-house"
+  status = 301
+  force = true
+  query = {path = ":path"}
