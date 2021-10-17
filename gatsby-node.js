@@ -104,7 +104,7 @@ exports.createPages = async ({ graphql, actions }) => {
   })
   createRedirect({
     fromPath: "/",
-    toPath: "https://www.projectsforasia.com/hope-house",
+    toPath: "/kidz-club",
     // isPermanent: true,
     force: true,
   })
